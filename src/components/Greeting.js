@@ -8,11 +8,11 @@ const Greeting = () => {
     return <p>Loading...</p>;
   }
 
-  if (!messageData.message) {
+  if (!messageData.greeting) {
     return <p>No message available</p>;
   }
 
-  return <h1>{messageData.message}</h1>;
+  return <h1>{messageData.greeting}</h1>;
 };
 
 export default Greeting;
