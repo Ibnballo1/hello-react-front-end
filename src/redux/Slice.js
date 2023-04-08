@@ -1,24 +1,26 @@
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+/* eslint-disable no-param-reassign */
 
-const API = "http://127.0.0.1:3000/api/messages/random";
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+
+const API = 'http://127.0.0.1:3000/api/messages/random';
 
 const initialState = {
-  message: "",
+  message: '',
   isLoading: true,
 };
 
 export const getMessageData = createAsyncThunk(
-  "message/getMessageData",
+  'message/getMessageData',
   async () => {
     const response = await fetch(API);
     const data = await response.json();
     return data;
-  }
+  },
 );
 
 const messageSlice = createSlice({
   initialState,
-  name: "message",
+  name: 'message',
   extraReducers: (builder) => {
     builder.addCase(getMessageData.pending, (state) => {
       state.isLoading = true;
