@@ -1,5 +1,5 @@
-import React from "react";
-import { useSelector } from "react-redux";
+import React from 'react';
+import { useSelector } from 'react-redux';
 
 const Greeting = () => {
   const messageData = useSelector((state) => state.message.message);
@@ -8,11 +8,11 @@ const Greeting = () => {
     return <p>Loading...</p>;
   }
 
-  if (!messageData.message) {
+  if (!messageData.greeting) {
     return <p>No message available</p>;
   }
 
-  return <h1>{messageData.message}</h1>;
+  return <h1>{messageData.greeting}</h1>;
 };
 
 export default Greeting;
