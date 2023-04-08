@@ -62,6 +62,8 @@
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
+[RAILS BACKEND REPO](https://github.com/Ibnballo1/hello-rails-back-end/)
+
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
