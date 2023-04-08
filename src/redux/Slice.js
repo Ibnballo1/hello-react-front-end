@@ -1,5 +1,3 @@
-/* eslint-disable no-param-reassign */
-
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 const API = 'http://127.0.0.1:3000/api/messages/random';
